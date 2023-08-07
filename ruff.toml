@@ -1,0 +1,91 @@
+src = ["src"]
+
+select = [
+    "A",
+    "B",
+    "C",
+    "E",
+    "D",
+    "F",
+    "G",
+    "I",
+    "N",
+    "Q",
+    "S",
+    "T",
+    "W",
+#   "ANN", # annotations handled by pyright
+    "ARG",
+    "BLE",
+#   "COM", # commas handled by black
+    "DJ",
+    "DTZ",
+    "EM",
+    "ERA",
+    "EXE",
+    "FBT",
+    "ICN",
+    "INP",
+    "ISC",
+    "NPY",
+#   "PD", # too many false positives
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT"
+]
+
+ignore = [
+    # Well named items don't need docstrings
+    "D1",
+
+    # Black handles this
+    "E501",
+
+    # We don't need to be this rigorous with logging
+    "G001",
+    "G002",
+    "G003",
+    "G004",
+    "G101",
+
+    "PLR0913", # TODO: Behaviour has changed with this rule https://github.com/pylint-dev/pylint/issues/8667
+
+    # A bit too opinionated
+    "RET504",
+    "RET505",
+    "RET506",
+    "RET507",
+    "RET508",
+
+    # Allow assert
+    "S101",
+
+    # Allow commented out code
+    "ERA001",
+]
+
+unfixable = [
+    "F841", # I'm planning to use it
+]
+
+[per-file-ignores]
+"tests/*" = [
+    "PLR2004", # Allow magic numbers
+]
+
+[pydocstyle]
+convention = "google"
+ignore-decorators = ["typing.overload"]

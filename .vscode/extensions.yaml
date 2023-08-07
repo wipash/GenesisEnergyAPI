@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.python",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "ms-python.black-formatter",
+        "charliermarsh.ruff"
+    ]
+}

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "genesisenergy-api"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = ["Sean McGrath <genesisenergyapi@dont.ltd>"]
+license = "GNU-3.0"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+aiohttp = "^3.8.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+black = "^23.1.0"
+ruff = "^0.0.264"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

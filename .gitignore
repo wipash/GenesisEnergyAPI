@@ -1,0 +1,13 @@
+test.py
+
+# python cached files
+__pycache__/
+*.py[cod]
+*$py.class
+
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv
